@@ -1,0 +1,52 @@
+body{
+    font-family: 'Mooli', sans-serif;
+    background-color: black;
+    /* color:white */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+    color: black;
+    width: 550px;
+    margin-left: 35%;
+    margin-top: 17px;
+    /* padding: 22px; */
+    border-radius: 4px;
+}
+.qns{
+    display: flex;
+    
+}
+.qns h2{
+    padding: 19px;
+}
+.ans{
+    background-color: rgb(168, 183, 215);
+    color: rgb(0, 0, 0);
+    /* width: 450px; */
+   
+}
+.ans p{
+    padding: 22px;
+}
+.ans p{
+    display: none;
+}
+.hide{
+    display: none;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 33px;
+    margin-left: 210px;
+}
+.active p{
+    display: block;
+}
