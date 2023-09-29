@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.2s linear;
+}
+body{
+    background-color: aqua;
+
+}
+.wrapper{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+.box {
+    color: white;
+    font-size: 20px;
+    font-family: bebas neue;
+    cursor: pointer;
+    padding: 15px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: -500px;
+}
+.box:hover{
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 10px 5px rgba(0, 0 , 0 , 0.9);
+    margin-right: 200px;
+}
+
+.box:hover ~ .effect{
+    transform: translate(-140% , -55%) scale(1);
+    opacity: 1;
+}
+.effect{
+    position: relative;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 0 5px 2px rgba(0, 0 , 0 , 0.5);
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    transform: translate(-50% ,-60%) scale(0.2);
+    opacity: 0;
+    
+}

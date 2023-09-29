@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image on Hover</title>
+    <style>
+        /* CSS to hide the image initially */
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* CSS for the hover effect */
+        .image-container:hover .image {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="1.jpg"  class="image">
+    </div>
+    <script>
+        // JavaScript to preload the image
+        const image = new Image();
+        image.src = '1.jpg';
+        image.onload = () => {
+            // Once the image is loaded, replace the placeholder image with the actual image
+            document.querySelector('.image').src = image.src;
+        };
+    </script>
+</body>
+</html>

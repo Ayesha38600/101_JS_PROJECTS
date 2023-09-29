@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        label{
+            font-size: 1.4rem;
+
+        }
+        input{
+            width: 100px;
+        }
+        .img{
+            width: 85vw;
+            margin: 30px auto;
+            min-width: 33px;
+        }
+        img{
+            display: block;
+            width: 70%;
+            margin-left: 15%;
+            object-fit: cover;
+        }
+        :root{
+            --base: red;
+            --spacing:10px;
+            --blur:10px;
+        }
+        img{
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+        .h1{
+            color: var(--base);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Aysh Update CSS Variables with JS!</h2>
+    <div class="controls">
+        <label for="spacing">spacing:</label>
+        <input type="range" name="spacing" id="spacing" value="10" min="10" max="200" data-sizing="px">
+
+
+        <label for="blur">Blur:</label>
+        <input type="range" id="blur" name="blur" min="0" max="25" value="10" />
+
+
+        <label for="spacing">Base Color:</label>
+        <input type="color" name="base" id="base" value="#125D98" >
+    </div>
+<div class="img">
+
+    <img src="https://img.freepik.com/free-photo/man-red-suit-with-blue-shirt-tie_1340-36720.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.1.2095423644.1693310655&semt=ais" alt="">
+</div>
+
+
+
+<script>
+const input = document.querySelectorAll(".controls input");
+// console.log(input);
+
+function handleUpdate() {
+  // console.log(this.name);
+  this.name == "base" ? (suppix = "") : (suppix = "px");   //iska matlb h k ternary operator h if name ="base" hoga to usko px assign ni hoga empty rhega q k color pixel me ni hota ... suppix ki jaga kuch v le skty 
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suppix
+  );
+}
+
+input.forEach((input) => 
+input.addEventListener("change", handleUpdate));
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+.logo{
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 4px; font-family: 'Playfair Display', serif;
+
+}
+span{
+    color: rgb(185, 14, 14);
+}
+.main img{
+    width: 40%;
+    height: 45%;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.main h1{
+    font-size: 60px;
+}
+.text{
+    margin-top: 100px;
+    margin-left: 50px;  font-family: 'Playfair Display', serif;
+}
+#head{
+    margin-top: -40px;
+    margin-left: 140px;
+}
+.deliver{
+    background-color: black;color: white;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    /* margin-inline: 40px; */  
+    font-family:"Roboto", sans-serif;
+    gap: 20px;
+}
+.deliver img{
+    width: 20%;
+    height: 20%;
+    margin-top: 120px;
+}
+.txt{
+    margin-top: 120px;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.txt h3{
+    font-size: 60px;
+}
+button{
+    margin-top: 20px;
+    margin: 12px;
+    border: none;
+    outline: none;
+    padding: 9px 14px;
+    width: 140px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    
+
+}
+.super{
+    background-color:rgb(185, 14, 14) ;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    transition: 0.5s ease;
+}
+.btn{
+    background-color:rgb(0, 0, 0) ; 
+    color: white;
+    border: 1px solid white;
+}
+.crd img{
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+gap: 15px;
+}
+.meal{
+    margin-top: 30px;
+    padding: 20px;
+}
+.meal h1{
+    text-align: center;
+    font-size: 60px;
+}
+.meal .btn{
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 20px;
+}
+.para{
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+.para p{
+    margin-top: 16px;
+}
+.man img{
+    width: 300px;
+    height: 460px;
+    object-fit: cover;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.man {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 60px;
+}
+.bgc{
+    background-color: #fff;
+    width: 285px;
+    height: 450px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px 12px rgb(255, 255, 255);
+}
+.ttxt{
+    margin-top: 160px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 20px;
+}
