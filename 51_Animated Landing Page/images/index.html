@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0; font-family: 'Mooli', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color:rgb(85, 119, 135);  color: white; padding: 5px;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+           
+        }
+        li{
+            list-style: none; padding: 20px;
+
+        }
+        .hero{
+            display: flex;
+            width: 300px;
+            height: 300px;
+            flex-wrap: wrap;
+            margin: 150px auto;
+         margin-top: -110;
+         margin-left: 10px;
+         
+        }
+        .small-img{
+            flex-basis: 100px;
+            cursor: pointer;
+            position:relative;
+            transition: 2s;
+            box-shadow: 27px 41px 13px 4px rgba(0,0,0,0.10);
+        }
+        .small-img img{
+            width: 100px;
+            height: 100%;
+        }
+        .small-img::after{
+            content: "";
+            width: 100px;
+            height: 30px;
+            bottom: -29px;
+            left: 7px;
+            position: absolute;
+            background: rgb(85, 119, 135);
+            transform:skewX(26deg);
+
+        } 
+       .small-img::before{
+            content: "";
+            width: 15px;
+            height: 100px;
+            right: -14px;
+            top: 17px;
+            position: absolute;
+            background: rgb(101, 137, 153);
+            transform:skewY(65deg);
+
+        }
+        .hero:hover .small-img:nth-child(1){
+            transform: translate(60px , 230px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(2){
+            transform: translate(-260px , -150px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(3){
+            transform: translate(91px , 295px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(4){
+            transform: translate(440px , -220px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(5){
+            transform: translate(100px , -120px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(6){
+            transform: translate(-370px , 320px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(7){
+            transform: translate(0px , -480px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(8){
+            transform: translate(-280px , -40px) rotate(360deg);
+
+        } 
+        .hero:hover .small-img:nth-child(9){
+            transform: translate(-400px , -120px) rotate(360deg);
+
+        } 
+        .container{
+            display: flex;
+            justify-content: space-between; height: 100vh;
+        }
+        .container .txt{
+            margin-top: 120px;
+            margin-left: 40px;
+        }
+        .container h1{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Car's</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+    <div class="container">
+       <div class="txt">
+        <h1>Modern Corolla For You!</h1> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid quia molestias voluptates.</p>
+       </div>
+
+
+        <div class="hero">
+            <div class="small-img">
+                <img src="1.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="4.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="5.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="6.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="7.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="8.jpg" alt="">
+            </div>
+            <div class="small-img">
+                <img src="9.jpg" alt="">
+            </div>
+                </div>
+    </div>
+ 
+</body>
+</html>

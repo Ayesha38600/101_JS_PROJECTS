@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 30px;
+
+        }
+        .gallery{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            margin: 5% auto 0;
+            box-sizing: border-box;
+        }
+        .image-box{
+            margin: 0 1%;
+            flex-grow: 1;
+            flex-basis: 0;
+            transition: .5s;
+        }
+        .image-box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; transition: .5s;
+        }
+        .image-box:hover{
+            flex-basis: 50%;
+        }
+        .active{
+            flex-basis: 50%;
+        }
+        .gallery:hover .active{
+            flex-basis: 0;
+        }
+        .image-box:nth-child(1):hover{
+            flex-basis: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>AYSH GORGEOUS GALLERY</h1>
+    <div class="gallery">
+        <div class="image-box active">
+            <img src="images/alireza-esmaeeli-BGSZ1t80rpM-unsplash.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="images/gesphotoss-1i9K55ni5Dk-unsplash.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="images/joshua-rondeau-xazIYnxpS2Q-unsplash.jpg"alt="">
+        </div>
+        <div class="image-box">
+            <img src="images/milan-popovic-kOnmHdLJTNI-unsplash.jpg" alt="">
+        </div>
+        <div class="image-box">
+            <img src="images/oswaldo-ibanez-1NPUmTaiMeg-unsplash.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
