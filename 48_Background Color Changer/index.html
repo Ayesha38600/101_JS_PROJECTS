@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 180px;
+            background-color: white;
+            height: 26px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <button id="btn">Click Me</button>
+
+
+    <script>
+//Choose a random color
+const button = document.querySelector('button')
+const body = document.querySelector('body')
+const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
+
+body.style.backgroundColor = 'blue'
+button.addEventListener('click', change)
+
+function change(){
+const colorIndex= parseInt(Math.random()*colors.length+1)
+body.style.backgroundColor = colors[colorIndex]
+}
+
+
+
+
+    </script>
+</body>
+</html>

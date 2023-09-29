@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Mooli', sans-serif;
+            text-align: center;
+            background: linear-gradient(rgb(206, 244, 249) , rgb(255, 226, 226));
+            height: 100vh;
+        }
+
+        #container {
+            margin: 20px;
+        }
+
+        #inputText {
+            width: 300px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #searchTerm {
+            width: 200px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #highlightedText {
+            white-space: pre-line;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Highlighter</h1>
+    <div id="container">
+        <input type="text" id="searchTerm" placeholder="Enter search term">
+        <br>
+        <textarea id="inputText" placeholder="Enter text"></textarea>
+        <br>
+        <button onclick="highlightText()">Highlight Text</button>
+        <div id="highlightedText"></div>
+    </div>
+
+    <script>
+        function highlightText() {
+            const searchTerm = document.getElementById('searchTerm').value;
+            const inputText = document.getElementById('inputText').value;
+            const highlightedText = document.getElementById('highlightedText');
+            // regExp ... js mai regular expression ka short name hota h and pattern matching mai use hota h 
+
+            // gi mai g ka matlb hota h globally yani ye tamam occurance ko find krta h not just first search  and i ka matlb ye hota h k whether case sensitive ho k na ho ye sab ko find krega 
+            
+            // Use regular expression to globally find and replace the search term with HTML spans for highlighting
+            const regex = new RegExp(searchTerm , 'gi');
+            const highlighted = inputText.replace(regex, match => `<span class="highlight">${match}</span>`);  // match ko highlight krega and regex ko match term sy replace krega
+            
+            highlightedText.innerHTML = highlighted;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <style>
+        body{
+    background: linear-gradient(rgb(255, 220, 226), rgb(183, 248, 248));
+    font-size: 4.65em;
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Mooli', sans-serif;
+}
+    </style>
+</head>
+<body>
+    <script>
+
+        let name = prompt("Dear! Please Enter Your Beautiful Name" , "Aysh")
+        let date = new Date();
+        let hours = date.getHours();
+
+        if (hours < 12){
+        document.write('Good Morning, '+name+'!');
+    }else if(hours = 12){
+        document.write('Good Afternoon, '+name+'!');
+    } 
+    
+    else if (hours > 12 && hours < 20 ){
+        document.write('Good Evening, '+name+'!');
+    } else {
+        document.write('Good Night, '+name+'!');
+    }
+    document.write('<br/>')
+
+    </script>
+</body>
+</html>
