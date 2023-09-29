@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* GLOBAL STYLES */
+  :root {
+    --primary-color: #87bc29;
+    --primary-font: Algerian;
+    --bg-image-center: no-repeat center/cover;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    align-items: center;  
+      padding: 9px;
+    z-index: 999;
+    margin-left: 70px;
+    margin-right: 70px;
+
+  }
+  .logo{
+    font-size: 24px;
+  }
+  span{
+    color: red;
+    font-family: var(--primary-font);
+  }
+  ul{
+    display: flex;
+    
+    
+  } li{
+    list-style: none;padding: 17px;
+  }
+  .bgc-container{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.616)),
+    url("Images/scott-blake-x-ghf9LjrVg-unsplash.jpg") var(--bg-image-center)
+      fixed;
+      color: white;
+      height: 100vh;
+      font-family: sans-serif;
+  }
+.text{
+    padding: 18px;
+
+    margin-top: 150px;
+    margin-left: 120px;
+}
+.text h1{
+    font-size: 80px;
+    letter-spacing: 1px;
+}
+a{
+    color: white;
+ text-decoration: none;
+    /* padding: 12px; */
+    border-bottom: 2px solid red;
+    height: 12px;
+    /* margin-top: 19px; */
+    /* margin: 10px; */
+
+}
+
+p{
+    margin-bottom: 15px;
+}
+.small img{
+    width: 300px;
+    height: 260px;
+    object-fit: cover;
+}
+.small{
+    color: black; border: 1px solid rgb(189, 168, 168);
+    padding: 16px;
+    text-align: center;
+    font-weight: normal;
+  font-weight:var(--primary-color);
+}
+.crd{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; gap: 50px;
+    margin-top: 70px;
+   
+}
+.small:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.services{
+    margin-top: 50px;
+    width: 100%;
+    /* margin-left: 20px; */
+}
+.services h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+.services h1:hover{
+  transform: skewX(13deg);
+  transition: 0.5s ease-in;
+}
+.small h2{
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
+}
+
+
+
+
+.lion{
+  display: flex;
+}
+.ten img{
+  width: 29%;
+  height: 330px;
+  border-radius: 50%;
+  /* object-fit: cover; */
+  border: 6px solid green;
+}
+
+.ten{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.choose{
+  margin-top: 70px;  padding: 40px; font-family: 'Lato', sans-serif;
+}
+
+#list{
+  border-radius: 100%;
+  border: 1px solid green;
+  color: green;
+  padding: 11px;
+  height: 40px;
+  text-align: center; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  align-items: center;
+}
+#list p{
+  text-align: center;
+ align-items: center;
+}
+.lion p{
+  font-weight: 600;
+  padding: 7px;
+  margin-left: 16px; align-items: center;
+
+}
+.details{
+  font-family: 'Lato', sans-serif;
+}
+.details img{
+  width: 300px;
+  height: 290px;
+  object-fit: cover;
+}
+.details img:hover{
+  transform: skewX(19deg);
+  transition: 0.5s ease-in;
+}
+.choose img:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.details h1{
+  text-align: center;
+}
+.detailText{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+.detailText h2{
+  padding: 11px;
+  
+}
+.detailText img{
+  box-shadow: 20px 20px 10px var(--primary-color);
+  margin-top: 32px;
+}
+.form input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(184, 179, 179);
+  width: 480px;
+  padding: 12px;
+  margin-left: 15%;
+
+}
+.form a{
+  margin-left: 15%;
+  padding: 12px;
+  color: black;
+  margin-top: -18px;
+
+}
+.form {
+  
+}
+#pass{
+  margin-bottom: 20px;
+}footer{
+
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-top: 22px;
+  padding: 22px;
+}

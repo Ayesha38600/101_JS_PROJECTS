@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" id="passwordInput" value=""><i onclick="copied()" class="fa-solid fa-copy"></i>
+        </div>
+        <div class="option">
+            <div class="text">
+                <p>password Length</p> <input type="number" value="8" id="passwordLength">
+            </div>
+            <div class="text">
+                <p>Including Uppercase</p> <input type="checkbox"  id="upper">
+            </div>
+            <div class="text">
+                <p>Including Lowercase</p> <input type="checkbox"  id="lower">
+            </div>
+            <div class="text">
+                <p>Including number</p> <input type="checkbox"  id="num">
+            </div>
+            <div class="text">
+                <p>Including Symbol</p> <input type="checkbox"  id="sym">
+            </div>
+            <button onclick="myFun()">Generate password</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
