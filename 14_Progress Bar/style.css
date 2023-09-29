@@ -1,0 +1,56 @@
+body{
+    font-family: 'Mooli', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+
+} 
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+}
+.container .progress-container{
+    margin-bottom: 25px;
+
+}
+.container .progress-container .progress-bar h4{
+    margin: 0px 0px 15px 15px;
+    letter-spacing: 0.5px;
+
+}
+.container .progress-container .progress-bar {
+position: relative;
+width: 500px;
+height: 30px;
+border-radius: 30px;
+background-color: white;
+color: black;
+box-shadow: 3px 4px 5px 0px rgba(204 , 185 185 / .75) ;
+}
+.container .progress-container .progress-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: black;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background:linear-gradient(90deg , rgb(81, 120, 188) 50% , rgb(121, 159, 203)100%);
+    transition:width 0.5s linear;
+}
