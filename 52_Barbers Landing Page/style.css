@@ -1,0 +1,155 @@
+.mainText h1{
+    font-family: 'Playfair Display', serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 17px;
+}
+nav h1{
+    padding: 17px;
+    font-weight: 700;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.main img{   margin-top: 90px;
+    height: 320px;
+    width: 250px;
+    object-fit: cover;
+}
+.mainText{
+    margin-top: 90px;
+    padding: 15px;
+}
+.mainText h1{
+    font-size: 60px;
+    line-height: 65px;
+}
+.mainText p{
+    /* font-size: 50px; */
+    /* line-height: 65px; */
+    margin-top: 16px;
+    color: rgb(71, 54, 54);
+}
+button{
+    /* font-size: 50px; */
+    /* line-height: 65px; */
+    margin-top: 16px;
+    /* color: rgb(71, 54, 54); */
+    background-color: rgb(83, 22, 22);
+    color: white;
+    width: 120px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+.imgg{
+    margin-left: 50%;
+margin-bottom: -60%;
+}
+#red{
+    margin-left: 25%;
+}
+.text h1, small{
+    font-family: 'Playfair Display', serif;
+}
+.text h1{
+    font-size: 60px;
+}
+.text small{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(71, 54, 54);
+    
+}
+.exp{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.exp img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+.exp p{
+    color: rgb(71, 54, 54); margin-top: 16px;
+
+}
+.navbar{
+    margin-top: 150px;
+    align-items: center;
+text-align: center;
+text-transform: uppercase;
+}
+#flw{
+    background-color: rgb(83, 22, 22);
+    color: white;
+    width: 60px;
+    height: 18px;
+    border: none;
+    outline: none;
+}
+.txt h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+.txt{
+    margin-left: 110px;
+}
+.services{
+    margin-top: 80px;
+}
+.services small{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card img{
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+}
+.card{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.small{
+    border: 1px solid rgb(166, 150, 150) ;
+}
+
+.ten{
+    text-align: center;
+    align-items: center;
+    padding: 17px;
+}
+.ten p{
+    margin-top: 17px;
+}
+footer
+{
+    background-color: rgb(83, 22, 22);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
