@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(rgb(208, 236, 236) , rgb(255, 230, 234));
+    height: 90vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    width: 320px;
+    padding: 16px;
+    text-align: center;
+    margin-left: 35%;
+    background-color: black;
+    color: white;
+    margin-top: 3%;
+}
+input{
+    width: 280px;
+    padding: 8px;border-radius: 2px;
+    border: 1px solid rgb(65, 62, 62);border: none;
+    outline: none;
+    
+}
+button{
+width: 296px;
+height: 42px;
+background-color: rgb(166, 91, 236);
+color: white;
+margin-top: 6%;
+border: none;
+outline: none;
+border-radius: 2px;cursor: pointer;
+}
+
+img{
+    margin-top: 11%;
+    
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid purple;
+}

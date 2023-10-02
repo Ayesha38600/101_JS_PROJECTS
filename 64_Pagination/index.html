@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+
+        }
+        .pagination{
+            background-color: #fff;
+            color: black;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50px;
+
+        }
+        .pagination a{
+            width: 100px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            transition: 0.3s linear;
+            padding: 19px;
+
+        }
+        a:hover{
+            color: white;
+            background-color: rgb(220, 97, 97);
+
+        }
+        .bottom_bar{
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: black;
+            bottom: 0;
+            left: -100px;
+            transition: 0.4s;
+        }
+        a:nth-child(1):hover ~ .bottom_bar{
+            left: 0;
+
+        }
+        a:nth-child(2):hover ~ .bottom_bar{
+            left: 101;
+
+        }
+        a:nth-child(3):hover ~ .bottom_bar{
+            left: 201;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <a href=""><i class="fas fa-chevron-left"></i>Prev</a>
+        <a href="">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+        <a href="">6</a>
+        <a href="">7</a>
+        <a href="">8</a>
+        <a href="">9</a>
+        <a href="">10</a>
+        <a href=""><i class="fas fa-chevron-right"></i>Next</a>
+        <div class="botton_bar"></div>
+    </div>
+</body>
+</html>
