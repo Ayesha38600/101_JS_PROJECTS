@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+
+}
+.main{
+    width: 35%;
+    height: 100vh;
+    background-color:rgb(131, 42, 42);
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;   padding: 12px;
+}
+ul{
+    display: flex;
+   
+}
+li{
+ margin-inline: 16px;
+    list-style: none;
+}
+.main i{
+    margin-top: 9px;
+    font-size: 14px;
+}
+h1{
+    font-size: 100px;
+}
+.txt{
+    text-align: center;
+    align-items: center;
+}
+p{
+    margin-top: -60px;
+}
+.right{
+    width: 65%;
+    height: 50vh;
+    /* background-color: blue; */
+  /* position: relative; */
+  display: flex;
+}
+.left{
+    width: 416px;
+    height: 50vh;
+    background-color: rgb(255, 247, 0);
+    /* position: absolute; */
+    background: url("https://plus.unsplash.com/premium_photo-1671379523824-c8aae61cb52a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.fiza{
+    width: 416px;
+    height: 50vh;
+    background-color: rgb(244, 235, 253);
+background: url("https://images.unsplash.com/photo-1509785307050-d4066910ec1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+ 
+}
+.final{
+    background-color: aqua;
+    display: inline;
+   position: absolute;
+   width: 65%;
+   height: 50vh;
+   left: 35%;
+   top: 50vh;
+   background: url("https://images.unsplash.com/photo-1536227661368-deef57acf708?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGNvZmZlZXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}.final img{
+    object-fit: cover;
+}
+.final .text{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    align-items: center;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    top: 20vh;
+}

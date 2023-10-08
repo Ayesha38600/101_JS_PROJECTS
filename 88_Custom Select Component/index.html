@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            position: relative;
+            align-items: center; font-family: 'Mooli', sans-serif;
+        }
+        input{
+            position: absolute;font-family: 'Mooli', sans-serif;
+border: none;
+outline: none;
+width: 400px;
+padding: 14px;
+border-radius: 4px ;
+
+        }
+        .final{
+            background-color: white;position: absolute;
+            color: black;
+            /* transform: translate(-50% , -50%); */
+            margin-top: 277px;width: 400px;border-radius: 4px ;
+           padding: 10px;
+           transition: 0.5s ease;height: 200px;
+overflow-y: scroll;
+display: none;
+
+        }
+        .final::-webkit-scrollbar{
+            display: none;
+        }
+      .final  input[type = radio]{
+        display: none; 
+          
+        }
+         label {
+            padding: 5px;
+            margin-top: 15px;
+            display: block;
+            
+         
+        }
+        label:hover{
+            background-color: rgb(241, 241, 241); transition: 0.5s ease;
+            /* padding: 4px; */
+        }
+
+        span{
+            color: rgb(232, 225, 225);
+        }
+    </style>
+</head>
+<body>
+<input type="text"  readonly placeholder="Select Role" id="inpu"> <span id="span"><h1>aa</h1></span>
+<div class="final">
+  <div class="uiux" >
+    <input type="radio"  >
+    <label for="inputField" value="UI/UX Engineer">UI/UX Engineer</label>
+    
+  </div>
+  <div class="front">
+    <input type="radio"  >
+    <label for="front" value="FrontEnd Engineer">FrontEnd Engineer</label>
+  </div>
+  <div class="back">
+    <input type="radio"  >
+    <label for="back" value ="BackEnd Engineer">BackEnd Engineer</label>
+  </div>
+  <div class="react">
+    <input type="radio"  >
+    <label for="react" >React Native Engineer</label>
+  </div>
+  <div class="Data">
+    <input type="radio"  >
+    <label for="data" >Data Scientist</label>
+  </div>
+
+</div>
+
+
+<script>
+    let input = document.getElementById("inpu");
+    let final = document.querySelector(".final");
+    let label = document.querySelectorAll("label");
+    let span = document.querySelector("span");
+    
+    input.addEventListener("click" , function name(params) {
+        final.style.display = "block" ;
+        
+    } )
+
+
+
+
+// Set a value for the input element
+input.value = "SELECT ROLE!";
+
+
+// Get a reference to the label element
+var labelElement = document.querySelector("label[for='inputField']");
+var front = document.querySelector("label[for='front']");
+var back = document.querySelector("label[for='back']");
+var react = document.querySelector("label[for='react']");
+var data = document.querySelector("label[for='data']");
+console.log(labelElement.textContent);
+
+// Update the label text based on user input or some other condition
+labelElement.addEventListener("click", function() {
+    input.value = labelElement.textContent ;
+    final.style.display ="none"
+   
+});
+front.addEventListener("click", function() {
+    input.value = front.textContent ;
+    final.style.display ="none"
+   
+});
+back.addEventListener("click", function() {
+    input.value = back.textContent ;
+    final.style.display ="none"
+   
+});
+react.addEventListener("click", function() {
+    input.value = react.textContent ;
+    final.style.display ="none"
+   
+});
+data.addEventListener("click", function() {
+    input.value = data.textContent ;
+    final.style.display ="none"
+   
+});
+
+</script>
+</body>
+</html>

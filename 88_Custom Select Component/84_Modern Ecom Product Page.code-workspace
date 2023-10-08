@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../84_Modern Ecom Product Page"
+		},
+		{
+			"path": "../85_Animated Text Backg"
+		},
+		{
+			"path": "../86_Working Contact Form"
+		},
+		{
+			"path": "../87_3D Book"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "88_Custom Select Component"
+	}
+}
