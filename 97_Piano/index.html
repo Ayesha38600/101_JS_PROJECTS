@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .piano {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .key {
+            width: 50px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #999;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .key.black {
+            width: 30px;
+            height: 120px;
+            background-color: black;
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aysh Piano</h1>
+    <div class="piano">
+        <div class="key" onclick="playSound('C')"></div>
+        <div class="key black" onclick="playSound('C#')"></div>
+        <div class="key" onclick="playSound('D')"></div>
+        <div class="key black" onclick="playSound('D#')"></div>
+        <div class="key" onclick="playSound('E')"></div>
+        <div class="key" onclick="playSound('F')"></div>
+        <div class="key black" onclick="playSound('F#')"></div>
+        <div class="key" onclick="playSound('G')"></div>
+        <div class="key black" onclick="playSound('G#')"></div>
+        <div class="key" onclick="playSound('A')"></div>
+        <div class="key black" onclick="playSound('A#')"></div>
+        <div class="key" onclick="playSound('B')"></div>
+    </div>
+    <script>
+        function playSound(note) {
+            const audio = new Audio(`https://www2.cs.uic.edu/~i101/SoundFiles/PinkPanther60.wav`);
+            audio.play();
+            
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Player</title>
+</head>
+<body>
+    <audio id="music" src="Kya-Kahu-Aankhon-Ne-Meri-Sab-Keh-Diya(PagalWorldl).mp3.crdownload"></audio>
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
+    <input type="range" id="volumeControl" min="0" max="10" step="0.01" value="1">
+    
+    <script>
+        const musi = document.getElementById("music");
+        const playButton = document.getElementById("playButton");
+        const pauseButton = document.getElementById("pauseButton");
+        const volumeControl = document.getElementById("volumeControl");
+
+        playButton.addEventListener("click", () => {
+            musi.play();
+        });
+
+        pauseButton.addEventListener("click", () => {
+            musi.pause();
+        });
+
+        volumeControl.addEventListener("input", () => {
+            music.volume = volumeControl.value;
+        });
+
+        musi.addEventListener("play", () => {
+            console.log("Music started playing.");
+        });
+
+        musi.addEventListener("pause", () => {
+            console.log("Music paused.");
+        });
+
+        musi.addEventListener("ended", () => {
+            console.log("Music playback ended.");
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- In this code:
+
+The HTML structure includes an audio element, play and pause buttons, and a volume control input.
+JavaScript event listeners are added to the play and pause buttons to control audio playback.
+An event listener on the volume control input adjusts the audio volume in real-time.
+Event listeners for the "play," "pause," and "ended" events of the audio element log messages to the console when these events occur.
+You can copy and paste this code into an HTML file to create a simple audio player with basic music event handling for everyday use. -->
+
+
+
+
+<!-- In JavaScript, you can work with various music-related events, especially when dealing with audio elements, libraries, or frameworks. Here are some common music-related events you might encounter:
+
+play: Fired when an audio or video element starts playing.
+pause: Triggered when an audio or video element is paused.
+ended: Fired when an audio or video element reaches the end of playback.
+timeupdate: Occurs as the playback position of an audio or video element is updated during playback.
+volumechange: Triggered when the volume of an audio element changes.
+loadedmetadata: Fired when the metadata for an audio or video element has been loaded.
+canplay: Occurs when the browser can start playing the media, but it might need to buffer a bit more.
+canplaythrough: Fired when the browser estimates that it can play the media through to the end without buffering.
+These events are often used to create interactive music players or synchronize actions with audio playback in web applications. You can add event listeners to your audio elements or other audio-related objects to respond to these events in your JavaScript code. -->
