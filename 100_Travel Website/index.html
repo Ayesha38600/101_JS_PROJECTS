@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Go <span>Trip</span></h1>
+
+            </div>
+<div class="searchBar">
+    <input type="text" placeholder="Search Here">
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+</div>
+<div class="icons">
+    <i class="fa-solid fa-moon" id="dark"></i>
+    <i class="fa-solid fa-user" id="user"></i>
+
+    <i class="fa-solid fa-bars" id="bar"></i>
+
+
+
+    <!-- //js -->
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#Package">Packages</a></li>
+        <li ><a href="#tour">Tour</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+</nav>
+</div>
+
+
+
+<div class="main">
+    <img src="1.png" alt="">
+    <div class="mainText">
+        <h1>Best Vacation Destination <br>for You </h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus voluptatem cum inventore facilis optio in reiciendis odit aspernatur quidem voluptas.</p>
+        <button>explore </button>
+    </div>
+</div>
+
+
+
+
+
+<div class="booking">
+    <div class="book">
+        <p>Where You Go?</p>
+        <input type="text" placeholder="Where You Go?" id="placeName">
+
+    </div>
+    <div class="book">
+        <p>Arrival</p>
+        <input type="date">
+    </div>
+    <div class="book">
+        <p>Leaving</p>
+
+        
+        <input type="date">
+    </div>
+    <button id="book">Book</button>
+</div>
+
+
+
+<div class="pack" id="Package">
+    <div class="head">
+        <h1>Best <span>Packages</span></h1>
+
+    </div>
+    <div class="packages" >
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/shanghai-aerial-sunset_649448-3733.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/west-bay-skyline-doha-city-during-sunrise-with-desert-qatar_430468-491.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.1.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/aerial-view-holy-kaabah-mecca_368093-6124.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.1.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/view-riyadh-from-kingdom-centre-burj-al-mamlaka-saudi-arabia_134785-6913.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.1.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/tomb-lihyan-son-kuza-qasr-alfarid-hegra-saudia-arabia_979520-13889.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.1.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/large-building-with-clock-it_902301-5.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=sph" alt="">
+            <p>Saudia , Makkah</p>
+            <p>40 Days , Hajj</p>
+            <p>$200</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="tour" id="tour">
+    <div class="head">
+        <h1>Our <span>Tour's</span></h1>
+
+    </div>
+    <div class="plans">
+        <div class="planCard">
+            <p id="std">Standard Plan</p>
+            <h3>$40/Month</h3>
+            <p>20 Days</p>
+            <p>food</p>
+
+            <p>drinks</p>
+
+            <p>Hotels</p>
+          
+            <p>  Safety</p>
+            <button>Choose Plan</button>
+        </div>
+        <div class="planCard">
+            <p id="std">Standard Plan</p>
+            <h3>$40/Month</h3>
+            <p>20 Days</p>
+            <p>food</p>
+
+            <p>drinks</p>
+
+            <p>Hotels</p>
+          
+            <p>  Safety</p>
+            <button>Choose Plan</button>
+        </div>
+        <div class="planCard">
+            <p id="std">Standard Plan</p>
+            <h3>$40/Month</h3>
+            <p>20 Days</p>
+            <p>food</p>
+
+            <p>drinks</p>
+
+            <p>Hotels</p>
+          
+            <p>  Safety</p>
+            <button>Choose Plan</button>
+        </div>
+    </div>
+</div>
+
+<div class="customer" id="review">
+    <div class="head">
+        <h1>Customer <span>Review</span></h1>
+
+    </div>
+    <div class="review">
+        <div class="reviewCard">
+            <img src="https://img.freepik.com/free-photo/handsome-man-outdoors-drinking-coffee-with-sunglasses-guy-with-beard-instagram-effect_1212-818.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=ais" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero eligendi illo tenetur placeat expedita obcaecati illum dolor architecto nihil.</p>
+        </div>
+        <div class="reviewCard">
+            <img src="https://img.freepik.com/free-photo/handsome-man-black-suit-with-white-shirt-posing-attractive-guy-with-fashion-hairstyle-confident-man-with-short-beard-adult-boy-with-brown-hair_186202-8527.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=ais" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero eligendi illo tenetur placeat expedita obcaecati illum dolor architecto nihil.</p>
+        </div>
+        <div class="reviewCard">
+            <img src="https://img.freepik.com/premium-photo/young-man-wearing-winter-clothes-street_1139-1388.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=ais" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero eligendi illo tenetur placeat expedita obcaecati illum dolor architecto nihil.</p>
+        </div>
+        <div class="reviewCard">
+            <img src="https://img.freepik.com/premium-photo/handsome-successful-man-expensive-suit_94347-559.jpg?size=626&ext=jpg&uid=R114821331&ga=GA1.2.2095423644.1693310655&semt=ais" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, vero eligendi illo tenetur placeat expedita obcaecati illum dolor architecto nihil.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="connect" id="contact">
+    <div class="head">
+        <h1>Connect <span>With Us</span></h1>
+
+    </div>
+    <div class="contact">
+        <input type="text" placeholder="Enter Email">
+        <input type="text" placeholder="Enter Password">
+        <button>Connect</button>
+
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>Aysh@gmail.com</p>
+</div>
+    </div>
+
+
+
+    <div class="loginPage">
+        <h2>Login Page</h2>
+        <input type="text" placeholder="Enter Email" id="email" value="">
+        <input type="password" placeholder="Enter password" id="pass" value="">
+        <button id="loginBtn">Login</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
