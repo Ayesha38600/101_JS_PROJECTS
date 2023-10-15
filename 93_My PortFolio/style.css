@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilda Display', serif;
+
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+
+}
+#nav h1{
+    font-family: "kajiro";
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    color: white;
+    
+}
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(0, 0, 0); */
+
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    
+    width: 100%;
+    height: 100vh;
+    /* background-color: #0000006e;    */
+/* ye background-color:  ; transparent h to laal dikh ra  */
+}
+
+#workingarea{
+    width: 80%;
+    max-width: 1920px;
+    /* background-color: #0000006e;  */
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+#nav{
+    width: 100%;
+    /* padding: 10px 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav img{
+    width: 160px;
+    object-fit: cover;
+    margin-left: -35px;
+}
+
+#nleft {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nav a{
+    pointer-events: all;
+    color: white;
+    font-family: gill;
+    font-family: 'Gilda Display', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(50px);
+}
+
+/* hero */
+#hero{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+justify-content: space-between;
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: red; */
+    /* background-color: #0000006e; */
+    transform: translate(0% , -50%);
+}
+
+#heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: green; */
+}
+#heroright{
+    width: 20%;
+    /* height: 100px; */
+    /* background-color: rgb(155, 13, 13); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#heroleft .elem h1{
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+    line-height: 0.9;    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroleft .elem {
+
+position: relative;
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 2vw;
+    margin-top: 2vw;
+    /* letter-spacing: 2px; */
+    /* font-family: "kajiro"; */
+    font-family: 'Gilda Display', serif;
+}
+
+#heroright p{
+    text-align: right;
+    /* margin-bottom: 50px; */
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 254, 254);
+    margin-bottom: 30px;
+    margin-top: 80px;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+#imagediv{
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(103, 3, 3); */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#imagediv p:nth-child(1){
+    margin-top: 10px;
+}
+
+#heroleft{
+    margin-top: 80px;
+}
+
+
+
+
+/* about */
+.aboutt{
+    /* text-align: center; */
+   /* display: none; */
+    background-color: black;
+    color: white;
+
+  
+
+}
+#h1{
+    /* margin-top: 30px; */
+    padding: 60px;
+    font-family: "Brush Script";
+    font-size: 90px;
+    /* transform: skewX("30deg"); */
+}
+#h1:hover{
+    transform: skewX("30deg");
+}
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0 4px 20px 0 white, 0 6px 20px 0 white;
+
+}
+
+.cleft{
+    background-color: #fff;
+    color: black;
+    width: 350px;
+    text-align: center;
+    padding: 12px;
+    
+}
+.cleft h2 , p{
+    margin-top: 70px;
+}
+.cleft h2{
+    font-size: 40px;
+    font-family: "Brush Script";
+}
+.card img{
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*  */
+
+.work{
+    background-color: black;
+    color: white;
+    
+
+}
+.work h1{
+padding: 80px;
+font-size: 90px;
+font-family: "Brush Script";
+}
+.cerd{
+    /* margin-top: 90px; */
+    display: flex;
+    justify-content: center;
+    margin-top:-25px;
+    
+ 
+}
+.cerd h2{
+    margin-top: 30px;
+}
+.cerd img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* gap: 4px; */
+    margin-inline: 20px;
+}
+.small h2{
+    font-family: "Brush Script";
+    text-align: center;
+    padding: 4px;
+}
+.work button{
+    margin-left: 41%;
+    margin-top: 40px;
+}
+
+.contact{
+    background-color: black;
+    color: white;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+
+
+}
+.contact h1{
+    padding: 60px;
+    font-family: "Brush Script";
+    font-size: 90px;
+}
+.con{
+    background-color: #fff;
+    color: black;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  padding: 30px;
+  margin-left: 35%;
+  border-radius: 4px;
+}
+.con input{
+    width: 280px;
+    border: none;
+    outline: none;
+    background-color: #e0d4d46e;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-top: 9px;
+    height: 40px;
+    /* padding-bottom: 40px; */
+}
+.con p{
+    margin-top: 15px;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    /* width: 380px; */
+}
+
+.footer{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding: 7px;  
+    padding: 30px;
+ 
+}
+.footer h1{
+    font-family: "Brush Script";
+    font-size: 20px;
+}
