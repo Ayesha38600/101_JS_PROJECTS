@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aysh Geometric Shape Generator</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  .search-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .search-input {
+    padding: 5px;
+    font-size: 16px;
+  }
+  .search-button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #canvasContainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #333;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+<div class="search-container">
+  <input class="search-input" type="text" >
+  <button class="search-button">Generate Shape</button>
+</div>
+<div id="canvasContainer"></div>
+<script>
+  const searchButton = document.querySelector(".search-button");
+  const searchInput = document.querySelector(".search-input");
+  const canvasContainer = document.getElementById("canvasContainer");
+
+  searchButton.addEventListener("click", () => {
+    const shape = searchInput.value.trim().toLowerCase();
+    generateShape(shape);
+  });
+
+  function generateShape(shape) {
+    const canvas = document.createElement("canvas");
+    canvas.width = 400;
+    canvas.height = 400;
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "red"; // Black color
+
+    switch (shape) {
+      case "circle":
+      // (x, y, radius, startAngle, endAngle, anticlockwise)
+        ctx.arc(200, 200, 100, 0, Math.PI * 2);
+        ctx.fill();
+        break;
+      case "rectangle":
+      // fillRect(x, y, width, height)
+        ctx.fillRect(100, 100, 200, 200);
+        break;
+      case "triangle":
+    
+        ctx.moveTo(200, 100);
+        ctx.lineTo(100, 300);
+        ctx.lineTo(300, 300);
+        ctx.closePath();
+        ctx.fill();
+        break;
+      case "rhombus":
+      
+        ctx.moveTo(200, 100);
+        ctx.lineTo(300, 200);
+        ctx.lineTo(200, 300);
+        ctx.lineTo(100, 200);
+        ctx.closePath();
+        ctx.fill();
+        break;
+      case "cube":
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(100, 100, 200, 200);
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(150, 50);
+        ctx.lineTo(350, 50);
+        ctx.lineTo(300, 100);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(150, 50);
+        ctx.lineTo(150, 150);
+        ctx.lineTo(350, 150);
+        ctx.lineTo(350, 50);
+        ctx.closePath();
+        ctx.stroke();
+        break;
+      case "sphere":
+        ctx.beginPath();
+        ctx.arc(200, 200, 100, 0, Math.PI * 2);
+        ctx.fill();
+        break;
+      case "parallelogram":
+        ctx.beginPath();
+        ctx.moveTo(100, 100);
+        ctx.lineTo(300, 100);
+        ctx.lineTo(250, 300);
+        ctx.lineTo(50, 300);
+        ctx.closePath();
+        ctx.fill();
+        break;
+      default:
+        alert("Invalid shape. Please enter a valid shape name.");
+        return;
+    }
+
+    canvasContainer.innerHTML = ""; // Clear previous canvas
+    canvasContainer.appendChild(canvas);
+  }
+</script>
+</body>
+</html>
