@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+}
+
+.drawing-container {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #000;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button, input {
+    margin: 5px;
+}
