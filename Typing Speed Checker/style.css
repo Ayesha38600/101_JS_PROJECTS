@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: rgb(255, 215, 210);
+    color: black;
+    font-family: "Kalyntha";
+}
+.container{
+    align-items: center;
+    text-align: center;
+    transform: translateY(50%);
+
+}
+.container p{
+    font-size: 40px;
+    font-weight: 1000;
+}
+textarea{
+    border: none;
+    outline: none;
+    padding: 6px;
+    border: 2px solid white;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+button{
+    margin-top: 20px;
+    border: none;    outline: none;
+    cursor: pointer; background-color: rgb(235, 175, 167);
+    color: rgb(0, 0, 0);
+    font-size: 40px;   letter-spacing: 2px;
+    padding: 10px 30px;    font-family: "Kalyntha";
+}
