@@ -29,10 +29,10 @@ setInterval(() => {
 
 //for dark light mode
 
-let dark = document.getElementById("dark");
-let user = document.getElementById("user");
 let bar = document.getElementById("bar");
 let loginBtn = document.getElementById("loginBtn");
+let dark = document.getElementById("dark");
+let user = document.getElementById("user");
 
 
 
