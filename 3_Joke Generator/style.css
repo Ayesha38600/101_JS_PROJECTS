@@ -1,0 +1,44 @@
+body{
+    font-family: 'Mooli', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 450px;
+    padding: 22px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 3%;
+    border: black 2px solid;
+
+}
+img{
+    width: 20%;
+}
+
+button{
+    width: 230px;
+    height: 38px;
+    /* background-color: rgb(254, 218, 254); */
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 9px;
+    cursor: pointer;
+    border: 2px solid black;
+font-size: 18px;
+margin-top: 20px;   font-family: 'Mooli', sans-serif;
+
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(16, 201, 155);
+    transition: 0.5s;
+    color: black;
+}
